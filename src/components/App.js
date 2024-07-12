@@ -6,8 +6,9 @@ const App = () => {
   const [name, setName] = useState("")
   return (
     <div>
-        <input type="text" onChange={(e) => setName(e.target.value)}/>
-        <p>{name}</p>
+      <label for='name'>Enter your name:</label>
+        <input id="name" type="text" onChange={(e) => setName(e.target.value)}/>
+        <p>Hello {name}!</p>
     </div>
   )
 }
